@@ -1,0 +1,46 @@
+ 1) Display all info in the table EMP and DEPT;
+
+ 	Ans : select * from departments ,employees;
+
+ 2) Display only the hire date and employee name for each employee;
+
+ 	Ans : select hire_date,first_name + ' ' + last_name from employees;  
+
+ 3) Display the ename concatenated with the job ID, seprated by a comma and space and name the column employee and title '
+
+
+ 4) Display the hire_date ,name and department number for all clerks;
+
+	Ans : select hire_date,first_name + ' ' + last_name ,department_id from employees;
+
+ 5) Create a query to display all the data from the EMP table Seprate each column by a comma Name the column THE_OUTPUT ;
+
+	Ans : Select  CAST(employee_id as Varchar ) + ' ' + first_name +  ' ' + last_name +' ' + email + ' ' +CAST(phone_number as varchar) + ' ' + CAST(hire_date as varchar) +
+		CAST(job_id as varchar) + CAST(salary as varchar) + CAST(manager_id as varchar) + CAST(department_id as varchar) as THE_OUTPUT   from employees;
+
+ 6)  Display the names and salaries of all employee with salary greator than 2000;
+  
+ 	Ans : select first_name + ' ' + last_name ,salary from employees where salary>2000;
+
+ 7) Display the names and dates of employee with the column headers 'Name' and 'Start Date';
+
+	Ans : select first_name + ' ' + last_name as 'Name' ,hire_date as 'Start Date' from employees;	
+
+ 8)  Display the names and hire_date of all employee in the order they were hired ;
+
+	Ans : select first_name + ' ' + last_name , hire_date  from employees  Order by  hire_date ;
+ 
+ 9) Display the names and salaries of all employee in reverse salary order;
+
+	Ans :  select first_name + ' ' + last_name  , salary from employees order by salary desc ;
+
+ 10) Display 'ename' and 'deptno' who are all earned commision and display salary in reverse order;
+
+ 
+ 11) Display the last name and job title of all employees who do not have a manageer;
+
+	Ans : 
+
+ 12) Display the last name and salary for all employees whose job is sales representative or stock clerk and whose salary is not equal to $2500 ,$3000 or $5000;
+
+   	
